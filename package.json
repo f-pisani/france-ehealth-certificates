@@ -2,8 +2,9 @@
     "name": "france-ehealth-certificaces",
     "type": "module",
     "author": "Florian Pisani",
-    "description": "Parse raw 2D-DOC data an verify signature. Supported documents: B2, L1.",
+    "description": "This library provides a quick and easy interface to verify COVID-19 certificates generated in France.",
     "version": "1.0.0",
+    "keywords": ["france", "covid-19", "covid19", "2d-doc", "health-certificate"],
     "license": "MIT",
     "repository": {
         "type": "git",
