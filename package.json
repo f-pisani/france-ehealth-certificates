@@ -3,7 +3,7 @@
     "type": "module",
     "author": "Florian Pisani",
     "description": "This library provides a quick and easy interface to verify COVID-19 certificates generated in France.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "keywords": ["france", "covid-19", "covid19", "2d-doc", "health-certificate"],
     "license": "MIT",
     "repository": {
