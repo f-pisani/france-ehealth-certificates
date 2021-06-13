@@ -1,0 +1,7 @@
+/.idea/
+/src/
+/.editorconfig
+/.eslintignore
+/.eslintrc.js
+/package-lock.json
+tsconfig.json
