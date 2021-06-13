@@ -11,13 +11,13 @@ export abstract class Certificate {
     private readonly _signature: string = "";
 
     private readonly _dcVersion: string = "";
-    private readonly _authorityId: string = "";
-    private readonly _authorityCertificateId: string = "";
-    private readonly _documentDate: string = "";
-    private readonly _documentSignatureDate: string = "";
-    private readonly _documentTypeId: string = "";
-    private readonly _documentPerimeterId: string = "";
-    private readonly _documentCountry: string = "";
+    private readonly _dcAuthorityId: string = "";
+    private readonly _dcCertificateId: string = "";
+    private readonly _dcDocumentDate: string = "";
+    private readonly _dcDocumentSignatureDate: string = "";
+    private readonly _dcDocumentTypeId: string = "";
+    private readonly _dcDocumentPerimeterId: string = "";
+    private readonly _dcDocumentCountry: string = "";
 
     protected constructor(data: string) {
         if (this.checkDataIsWellFormed(data) === false) {
@@ -26,13 +26,13 @@ export abstract class Certificate {
 
         const headers = this.parseHeaderFields(data);
         this._dcVersion = headers[1];
-        this._authorityId = headers[2];
-        this._authorityCertificateId = headers[3];
-        this._documentDate = this.parseHeaderDate(headers[4]);
-        this._documentSignatureDate = this.parseHeaderDate(headers[5]);
-        this._documentTypeId = headers[6];
-        this._documentPerimeterId = headers[7];
-        this._documentCountry = headers[8];
+        this._dcAuthorityId = headers[2];
+        this._dcCertificateId = headers[3];
+        this._dcDocumentDate = this.parseHeaderDate(headers[4]);
+        this._dcDocumentSignatureDate = this.parseHeaderDate(headers[5]);
+        this._dcDocumentTypeId = headers[6];
+        this._dcDocumentPerimeterId = headers[7];
+        this._dcDocumentCountry = headers[8];
 
         const messageAndSignature = data.split("\u001f");
         if (messageAndSignature.length !== 2) {
@@ -151,31 +151,31 @@ export abstract class Certificate {
         return this._dcVersion;
     }
 
-    get authorityId(): string {
-        return this._authorityId;
+    get dcAuthorityId(): string {
+        return this._dcAuthorityId;
     }
 
-    get authorityCertificateId(): string {
-        return this._authorityCertificateId;
+    get dcCertificateId(): string {
+        return this._dcCertificateId;
     }
 
-    get documentDate(): string {
-        return this._documentDate;
+    get dcDocumentDate(): string {
+        return this._dcDocumentDate;
     }
 
-    get documentSignatureDate(): string {
-        return this._documentSignatureDate;
+    get dcDocumentSignatureDate(): string {
+        return this._dcDocumentSignatureDate;
     }
 
-    get documentTypeId(): string {
-        return this._documentTypeId;
+    get dcDocumentTypeId(): string {
+        return this._dcDocumentTypeId;
     }
 
-    get documentPerimeterId(): string {
-        return this._documentPerimeterId;
+    get dcDocumentPerimeterId(): string {
+        return this._dcDocumentPerimeterId;
     }
 
-    get documentCountry(): string {
-        return this._documentCountry;
+    get dcDocumentCountry(): string {
+        return this._dcDocumentCountry;
     }
 }
