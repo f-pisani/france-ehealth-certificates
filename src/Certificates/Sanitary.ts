@@ -20,7 +20,7 @@ export class Sanitary extends Certificate {
         bodyRegex += "F3([M|F|U]{1})\u001d?"; // Gender (M: male; F: female; U: unknown)
         bodyRegex += "F4([A-Z\\s\\d\\./-]{3,7})\u001d?"; // Analysis code
         bodyRegex += "F5([P|N|I|X]{1})\u001d?"; // Analysis result (P: Positive; N: Negative; I: Undetermined; X: non-compliant sample)
-        bodyRegex += "F6(\\d{8}{12})\u001d?"; // Analysis datetime (DDMMYYYYHHmm)
+        bodyRegex += "F6(\\d{12})\u001d?"; // Analysis datetime (DDMMYYYYHHmm)
 
         const bodyFields = this.body.match(new RegExp(bodyRegex, 'i'));
         if (bodyFields === null) {
