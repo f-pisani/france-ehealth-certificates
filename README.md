@@ -84,7 +84,7 @@ F6                        | Analysis datetime               | analysisDatetime |
 * I : Undetermined
 * X : Non-compliant sample
 
-N.b. : Data used in this example is a sample available on [ANTS website][1].
+Data used in this example is a sample available on [ANTS website][1].
 
 ## 2D-DOC Header fields
 
