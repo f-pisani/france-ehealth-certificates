@@ -21,7 +21,7 @@ isVerified = vaccination.verifySignature("-----BEGIN PUBLIC KEY-----MFkwEwYHKoZI
 // This method will always return a boolean without throwing.
 isVerified = vaccination.tryVerifySignature("-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEqY8NfM1igIiTvsTUNuedGDSh1uAB1w8cTNzNnZ4v4in3JAUU6N3AypjQx0QMnMSShJoPvac/w5L02grgf4TCPA==-----END PUBLIC KEY-----");
 ```
-2D-DOC data use ECDSA keys.
+2D-DOC is signed using ECDSA keys.
 
 **Read certificate fields**
 
@@ -57,7 +57,7 @@ isVerified = sanitary.verifySignature("-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0
 // This method will always return a boolean without throwing.
 isVerified = sanitary.tryVerifySignature("-----BEGIN PUBLIC KEY-----MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEqY8NfM1igIiTvsTUNuedGDSh1uAB1w8cTNzNnZ4v4in3JAUU6N3AypjQx0QMnMSShJoPvac/w5L02grgf4TCPA==-----END PUBLIC KEY-----");
 ```
-2D-DOC data use ECDSA keys.
+2D-DOC is signed using ECDSA keys.
 
 **Read certificate fields**
 
@@ -97,7 +97,7 @@ Document issue date                     | dcDocumentDate          | 4/5/2013
 Signature creation date                 | dcDocumentSignatureDate | 4/5/2013
 Document type id                        | dcDocumentTypeId        | B2
 Document perimeter id                   | dcDocumentPerimeterId   | 01
-Document country ([ISO-3166-Alpha2][3]) | dcDocumentPerimeterId   | FR
+Document country ([ISO-3166-Alpha2][3]) | dcDocumentCountry       | FR
 
 ## 2D-DOC Message
 
@@ -117,7 +117,7 @@ No. This library only provides features to read and verify a COVID-19 certificat
 You need to implement [French regulations][5] on your side.
 
 ## Do it work with European certificates ?
-No. European certificates use another format to store and validate certificates.
+No. European certificates use another format of certificates.
 
 You can find more information [here][6].
 
