@@ -15,6 +15,9 @@ export class Vaccination extends Certificate {
     private readonly _lastDoseDate: string = "";
     private readonly _state: string = "";
 
+    /**
+     * @param {string} data Raw 2D-DOC data.
+     */
     public constructor(data: string) {
         super(data);
 
@@ -48,46 +51,79 @@ export class Vaccination extends Certificate {
         this._state = bodyFields[11];
     }
 
+    /**
+     * @return {string} Patient last name.
+     */
     get lastname(): string {
         return this._lastname;
     }
 
+    /**
+     * @return {string} Patient first name.
+     */
     get firstname(): string {
         return this._firstname;
     }
 
+    /**
+     * @return {string} Patient birth date.
+     */
     get birthdate(): string {
         return this._birthdate;
     }
 
+    /**
+     * @return {string} Disease name.
+     */
     get disease(): string {
         return this._disease;
     }
 
+    /**
+     * @return {string} Preventive agent.
+     */
     get preventiveAgent(): string {
         return this._preventiveAgent;
     }
 
+    /**
+     * @return {string} Vaccine name.
+     */
     get vaccine(): string {
         return this._vaccine;
     }
 
+    /**
+     * @return {string} Vaccine maker name.
+     */
     get vaccineMaker(): string {
         return this._vaccineMaker;
     }
 
+    /**
+     * @return {string} Current number of injections.
+     */
     get nbDoseTaken(): string {
         return this._nbDoseTaken;
     }
 
+    /**
+     * @return {string} Required number of injections.
+     */
     get nbDoseExpected(): string {
         return this._nbDoseExpected;
     }
 
+    /**
+     * @return {string} Last date of injection.
+     */
     get lastDoseDate(): string {
         return this._lastDoseDate;
     }
 
+    /**
+     * @return {string} Current vaccination cycle state.
+     */
     get state(): string {
         return this._state;
     }

@@ -2,6 +2,9 @@
 
 import { Certificate } from "./Certificate";
 
+/**
+ * Sanitary certificate
+ */
 export class Sanitary extends Certificate {
     private readonly _lastname: string = "";
     private readonly _firstname: string = "";
@@ -11,6 +14,9 @@ export class Sanitary extends Certificate {
     private readonly _analysisResult: string = "";
     private readonly _analysisDatetime: string = "";
 
+    /**
+     * @param {string} data Raw 2D-DOC data.
+     */
     public constructor(data: string) {
         super(data);
 
@@ -36,30 +42,51 @@ export class Sanitary extends Certificate {
         this._analysisDatetime = this.parseDDMMYYYYHHmmDate(bodyFields[7]);
     }
 
+    /**
+     * @return {string} Patient last name.
+     */
     get lastname(): string {
         return this._lastname;
     }
 
+    /**
+     * @return {string} Patient first name.
+     */
     get firstname(): string {
         return this._firstname;
     }
 
+    /**
+     * @return {string} PPatient birth date.
+     */
     get birthdate(): string {
         return this._birthdate;
     }
 
+    /**
+     * @return {string} Patient gender.
+     */
     get gender(): string {
         return this._gender;
     }
 
+    /**
+     * @return {string} Analysis code.
+     */
     get analysisCode(): string {
         return this._analysisCode;
     }
 
+    /**
+     * @return {string} Analysis result.
+     */
     get analysisResult(): string {
         return this._analysisResult;
     }
 
+    /**
+     * @return {string} Analysis datetime.
+     */
     get analysisDatetime(): string {
         return this._analysisDatetime;
     }
