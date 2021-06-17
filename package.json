@@ -1,5 +1,5 @@
 {
-    "name": "france-ehealth-certificaces",
+    "name": "france-ehealth-certificates",
     "author": "Florian Pisani",
     "description": "This library provides a quick and easy interface to verify COVID-19 certificates generated in France.",
     "version": "1.0.4",
