@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import { Sanitary } from "../../lib";
+import { Sanitary } from "../../src";
 
 describe('Sanitary certificate', () => {
     it('Sanitary constructor should throws error with malformed data', () => {

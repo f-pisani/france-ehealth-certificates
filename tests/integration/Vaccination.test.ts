@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import { Vaccination } from "../../lib";
+import { Vaccination } from "../../src";
 
 describe('Vaccination certificate', () => {
     it('Vaccination constructor should throws error with malformed data', () => {
