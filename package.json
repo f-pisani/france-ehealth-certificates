@@ -44,6 +44,6 @@
         "build": "rm -rf ./lib/ && tsc",
         "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
         "flint": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix",
-        "test": "mocha -r ts-node/register tests/**/*.ts"
+        "test": "node ./node_modules/mocha/bin/mocha -r ts-node/register tests/**/*.ts"
     }
 }
