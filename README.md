@@ -1,3 +1,5 @@
+**[DEPRECATED] This library was designed for the first version of the French digital pass, France use European eHealth format since mid July. Check [https://github.com/ehn-dcc-development](https://github.com/ehn-dcc-development) for more informations.**
+
 # france-ehealth-certificates
 This library provides a quick and easy interface to verify COVID-19 certificates generated in France.
 
