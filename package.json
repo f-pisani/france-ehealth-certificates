@@ -24,7 +24,7 @@
     "dependencies": {
         "asn1": "^0.2.4",
         "base32-decode": "^1.0.0",
-        "jsrsasign": "^10.3.0"
+        "jsrsasign": "^11.0.0"
     },
     "devDependencies": {
         "@types/chai": "^4.2.18",
